@@ -12,7 +12,7 @@ h1 {
     text-align: center;
     font-size: 38px;
     opacity: 0;
-    animation: fadeIn 2s forwards 1s;
+    animation: fadeIn 1s forwards 0.5s;
 }
 
 #introduction {
@@ -24,13 +24,14 @@ h1 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 img {
     width: 20%;
     margin-right: 20px;
     opacity: 0;
-    animation: fadeIn 2s forwards 2s;
+    animation: fadeIn 1s forwards 0.5s;
     border: 8px solid white;
     border-radius: 50%;
     box-sizing: border-box;
@@ -39,8 +40,9 @@ img {
 p {
     max-width: 50%;
     opacity: 0;
-    animation: fadeIn 2s forwards 3s;
+    animation: fadeIn 1s forwards 0.5s;
     font-size: 28px;
+    text-align: justify; /* Ensures text aligns well */
 }
 
 button {
@@ -55,7 +57,7 @@ button {
     border-radius: 5px;
     transition: background-color 0.3s;
     opacity: 0;
-    animation: fadeIn 2s forwards 4s;
+    animation: fadeIn 1s forwards 0.5s;
 }
 
 button:hover {
@@ -69,7 +71,66 @@ button:hover {
 .new-section {
     padding: 20px;
     opacity: 0;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 1s forwards;
+}
+
+.toc-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: #DEAF84;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#table-of-contents {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background-color: white;
+    color: #DEAF84;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    width: 200px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#table-of-contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+#table-of-contents li {
+    margin: 10px 0;
+}
+
+#table-of-contents a {
+    color: #DEAF84;
+    text-decoration: none;
+}
+
+#table-of-contents a:hover {
+    text-decoration: underline;
+}
+
+#close-toc {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background-color: white;
+    color: #DEAF84;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1001;
 }
 
 @keyframes fadeIn {
@@ -124,4 +185,34 @@ button:hover {
         font-size: 16px;
         padding: 8px 16px;
     }
+}
+
+#personality-test {
+    border-radius: 15px;
+    border: 5px solid white;
+}
+
+.text-background {
+    background-color: white;
+    color: #DEAF84;
+    border-radius: 15px;
+    padding: 20px;
+    animation: fadeIn 1s forwards 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center; /* Center text vertically */
+    margin: 20px auto; /* Centers the text background */
+    max-width: 80%; /* Ensures the text background does not exceed the container width */
+}
+
+#variety-show {
+    border-radius: 15px;
+    border: 5px solid white;
+    animation: fadeIn 1s forwards 0.5s;
+}
+
+#story-of-my-life {
+    border-radius: 15px;
 }
