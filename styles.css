@@ -1,12 +1,27 @@
 body {
     display: block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #DEAF84;
+    background-color: #0A0A32;
     color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0;
+}
+
+.toc-btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1);
+}
+
 
 h1 {
     text-align: center;
@@ -51,7 +66,7 @@ button {
     padding: 10px 20px;
     font-size: 18px;
     background-color: white;
-    color: #DEAF84;
+    color: #0a0a32;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -79,7 +94,7 @@ button:hover {
     top: 10px;
     left: 10px;
     background-color: white;
-    color: #DEAF84;
+    color: #0a0a32;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -92,7 +107,7 @@ button:hover {
     top: 50px;
     left: 10px;
     background-color: white;
-    color: #DEAF84;
+    color: #0a0a32;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -112,7 +127,7 @@ button:hover {
 }
 
 #table-of-contents a {
-    color: #DEAF84;
+    color: #0a0a32;
     text-decoration: none;
 }
 
@@ -125,7 +140,7 @@ button:hover {
     top: 10px;
     left: 20px;
     background-color: white;
-    color: #DEAF84;
+    color: #0a0a32;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -202,7 +217,7 @@ button:hover {
 
 .text-background {
     background-color: white;
-    color: #DEAF84;
+    color: #0a0a32;
     border-radius: 15px;
     padding: 20px;
     animation: fadeIn 1s forwards 0.5s;
