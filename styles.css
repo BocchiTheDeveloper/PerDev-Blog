@@ -210,7 +210,7 @@ button:hover {
     }
 }
 
-#personality-test {
+#personality-test, #metamorphosis, #story-of-my-life {
     border-radius: 15px;
     border: 5px solid white;
 }
@@ -239,8 +239,4 @@ button:hover {
     animation: fadeIn 1s forwards 0.5s;
     margin: 20px auto; /* Centers the video within its container */
     display: block; /* Ensures the video is treated as a block element */
-}
-
-#story-of-my-life {
-    border-radius: 15px;
 }
